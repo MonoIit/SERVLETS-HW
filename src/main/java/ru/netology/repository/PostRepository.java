@@ -9,7 +9,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-
 public class PostRepository {
   private Map<Long, Post> map = new ConcurrentHashMap<>();
   private AtomicLong idCounter = new AtomicLong(1);
